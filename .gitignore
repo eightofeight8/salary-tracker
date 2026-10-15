@@ -9,3 +9,5 @@ local.db
 local.db-journal
 *.log
 *.tsbuildinfo
+
+.vercel

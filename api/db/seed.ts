@@ -1,7 +1,7 @@
 import { pathToFileURL } from 'node:url';
 import { nanoid } from 'nanoid';
-import { db } from './client';
-import { categories, type NewCategory } from './schema';
+import { db } from './client.js';
+import { categories, type NewCategory } from './schema.js';
 
 const SEED_CATEGORIES: Omit<NewCategory, 'id'>[] = [
   { name: 'Продукты', type: 'expense', color: '#ef4444', icon: 'shopping-cart' },

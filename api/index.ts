@@ -1,7 +1,7 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { handleCategories } from './routes/categories';
-import { handleTransactions } from './routes/transactions';
-import { handleAnalytics } from './routes/analytics';
+import { handleCategories } from './routes/categories.js';
+import { handleTransactions } from './routes/transactions.js';
+import { handleAnalytics } from './routes/analytics.js';
 
 function getPathname(url: URL): string {
   let pathname = url.pathname;

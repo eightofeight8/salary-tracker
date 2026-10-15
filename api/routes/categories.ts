@@ -2,9 +2,9 @@ import { eq, and } from 'drizzle-orm';
 import { nanoid } from 'nanoid';
 import { z } from 'zod';
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { db } from '../db/client';
-import { categories } from '../db/schema';
-import { validateBody } from '../middleware/validate';
+import { db } from '../db/client.js';
+import { categories } from '../db/schema.js';
+import { validateBody } from '../middleware/validate.js';
 
 const categorySchema = z.object({
   name: z.string().min(1, 'Название не может быть пустым').max(50, 'Максимум 50 символов'),

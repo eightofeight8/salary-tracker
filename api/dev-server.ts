@@ -1,5 +1,5 @@
 import { createServer, type IncomingMessage, type ServerResponse } from 'node:http';
-import handler from './index';
+import handler from './index.js';
 
 const PORT = Number(process.env.PORT ?? 3000);
 

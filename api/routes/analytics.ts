@@ -1,7 +1,7 @@
 import { and, eq, sql } from 'drizzle-orm';
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { db } from '../db/client';
-import { categories, transactions } from '../db/schema';
+import { db } from '../db/client.js';
+import { categories, transactions } from '../db/schema.js';
 
 const DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
 
